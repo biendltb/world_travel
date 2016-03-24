@@ -67,5 +67,22 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.txt</include>
+                    <include>**/*.conf</include>
+                    <include>**/*.xsl</include>
+                    <include>**/*.vm</include>
+                    <include>**/*.css</include>
+                    <include>**/*.js</include>
+                    <include>**/*.properties</include>
+                    <include>**/*.html</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>
