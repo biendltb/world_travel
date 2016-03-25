@@ -6,6 +6,7 @@
 package com.biendltb.core;
 
 import com.biendltb.world_travel.HelloServlet;
+import java.io.File;
 import org.eclipse.jetty.server.Connector;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
@@ -46,7 +47,7 @@ public class MainServer {
         
         // add resource holder
         ServletHolder assetsHolder = context_hdl.addServlet(org.eclipse.jetty.servlet.DefaultServlet.class, "/assets/*");
-        assetsHolder.setInitParameter("resourceBase", "./src/main/resources/assets/");
+        assetsHolder.setInitParameter("resourceBase", "./src/main/resources/assets");
         assetsHolder.setInitParameter("pathInfoOnly", "true");
         
         context_hdl.addServlet(new ServletHolder(new HelloServlet()), "/*");
