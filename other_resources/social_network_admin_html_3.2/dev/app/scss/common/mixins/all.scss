@@ -1,0 +1,8 @@
+@mixin padding-all-half($x) {
+  padding: $x/2;
+}
+
+// Datepicker mixin & variables
+@mixin border-radius($size) {
+  border-radius: $size $size $size $size;
+};

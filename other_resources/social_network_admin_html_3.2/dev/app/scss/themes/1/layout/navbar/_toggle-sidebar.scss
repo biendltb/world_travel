@@ -1,0 +1,15 @@
+#toggle-sidebar-menu {
+  float:left;
+  height: $navbar-height;
+  display: inline-block;
+  font-size: 12px;
+  // padding calculation
+  @include padding-all-half($navbar-height - 24);
+  color: $navbar-default-color;
+  @media (min-width: $screen-sm) {
+    border-right: 1px solid #efefef;
+  }
+  @media (max-width: $screen-sm) {
+    margin-left: -$grid-gutter-width /2;
+  }
+}

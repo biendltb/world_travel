@@ -1,0 +1,23 @@
+.nav-tabs {
+  background: lighten(#efefef, 4%);
+  > li > a {
+    border-radius: 0;
+    margin-right: 0;
+    color: #888;
+    i { color: #ccc; }
+  }
+  > li.active > a {
+    &,&:hover {
+      border-top-color: #fff;
+    }
+    background: #fff;
+    color: $text-color;
+  }
+}
+.tab-content {
+  padding: $grid-gutter-width/2;
+}
+
+.panel .nav-tabs {
+  margin-left:-1px;
+}

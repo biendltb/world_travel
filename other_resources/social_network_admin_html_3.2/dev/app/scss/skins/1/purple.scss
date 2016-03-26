@@ -1,0 +1,22 @@
+// Load Bootstrap variables
+@import "../../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+@import "../../common/variables/colors";
+
+// Skin Customizations
+$primary-color: #af86b9;
+
+// THEME SPECIFIC VARIABLES
+@import "../../themes/1/_variables";
+
+// Load App variables
+@import "../../common/variables/all";
+
+@import "../../common/_vendor";
+
+@import "../../common/_app";
+
+@import "../../common/_demo";
+
+// Theme styles
+@import "../../themes/1/_styles";

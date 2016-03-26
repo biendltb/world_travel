@@ -1,0 +1,32 @@
+.panel {
+	box-shadow: none;
+}
+
+@panel-default-heading-bg: @primary-color;
+.panel-default .panel-heading {
+	color: #fff;
+	font-weight: 500;
+	&.panel-heading-white {
+		background: #fff;
+		color: lighten(@text-color, 24%);
+		i {
+			color: #ccc;
+		}
+	}
+	&.panel-heading-gray {
+		background: lighten(#efefef, 4%);
+		color: lighten(@text-color, 24%);
+		border-bottom: 1px solid @panel-default-border;
+		i {
+			color: #ccc;
+		}
+	}
+	border-bottom: 0;
+}
+
+.panel-default .panel-footer {
+	background: #fff;
+	&.padding-none {
+		padding: 0;
+	}
+}

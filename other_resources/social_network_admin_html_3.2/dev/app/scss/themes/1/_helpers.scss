@@ -1,0 +1,15 @@
+.margin-none {
+  margin: 0;
+}
+
+.relative {
+  position: relative;
+}
+.boxed {
+  border:1px solid #efefef;
+  padding:$grid-gutter-width / 3;
+}
+
+.display-none {
+  display:none;
+}

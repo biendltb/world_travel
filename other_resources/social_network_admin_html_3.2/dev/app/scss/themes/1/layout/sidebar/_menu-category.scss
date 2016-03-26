@@ -1,0 +1,9 @@
+#menu ul li.category {
+  padding-left: $sidebar-menu-category-left;
+  font-weight: $sidebar-menu-category-weight;
+  font-size: $sidebar-menu-category-size;
+  color: $sidebar-menu-category;
+  height: $sidebar-menu-category-height;
+  line-height: $sidebar-menu-category-height;
+  &:hover {background: none;}
+}

@@ -1,0 +1,112 @@
+// General Menu Style and Aesthetics
+#menu {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		// hide all submenus by default
+		ul {
+			display: none;
+		}
+
+		&.nav > li > a:hover, &.nav > li > a:focus {
+			&:extend(#menu ul li:hover);
+		}
+
+		li {
+			&.open > ul {
+				display: block;
+			}
+			// Menu Category
+			&.border.top {
+				border-top: 1px solid  @sidebar-menu-border;
+			}
+			&.border.bottom {
+				border-bottom: 1px solid @sidebar-menu-border;
+			}
+			&.border.top-bottom {
+				border-top: 1px solid  @sidebar-menu-border;
+				border-bottom: 1px solid  @sidebar-menu-border;
+			}
+
+			&.reset {
+				height: auto;
+				opacity: 1;
+				ul {
+					background: none;
+					display: block;
+				}
+				&:hover {
+					background: none;
+				}
+			}
+
+			a {
+				display: block;
+				color: @sidebar-item-link;
+				font-weight: @sidebar-item-link-weight;
+				font-size: @sidebar-item-link-size;
+				text-decoration: none;
+				// Picto Icon Positioning
+				[class*="icon-"] {
+					vertical-align: middle;
+					color: @sidebar-item-icon-color;
+					font-size: 1.4em;
+					&:before {
+						position: relative;
+						width: 26px;
+					}
+				}
+				// Font-Awesome Icon Positioning
+				[class*="fa fa-"] {
+					width: 26px;
+					font-size: 18px;
+					color: @sidebar-item-icon-color;
+					&:before {
+						margin-left: 2px;
+					}
+					&.text-success {
+						color: @success-color;
+					}
+					&.text-primary {
+						color: @primary-color;
+					}
+					&.text-info {
+						color: @info-color;
+					}
+				}
+			}
+
+			&:hover {
+				background: @sidebar-item-hover-background;
+				text-decoration: none;
+			}
+			&.hasSubmenu {
+				> a:before {
+					font-family: @sidebar-collapse-icon-family;
+					content: @sidebar-collapse-icon;
+					font-size: 1em;
+					position: absolute;
+					right: 10px;
+					color: @gray;
+					display: block;
+				}
+				&.open > a:before {
+					content: @sidebar-collapse-icon-open;
+				}
+			}
+			&.active {
+				a {
+					color: @sidebar-item-link-active;
+				}
+				a i {
+					color: @sidebar-item-link-icon-active;
+				}
+			}
+		}
+	}
+}

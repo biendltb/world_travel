@@ -1,0 +1,54 @@
+.navbar-nav > li.notifications {
+	a.dropdown-toggle {
+		font-size: 1.3em;
+		i:before {
+			position: relative;
+			top: 3px;
+		}
+		&:after {
+			font-family: 'FontAwesome';
+			content: "\f005";
+			font-size: 0.5em;
+			position: absolute;
+			top: -13px;
+			right: 8px;
+			color: @danger-color;
+			display: block;
+		}
+	}
+	.dropdown-menu {
+		width: 280px;
+		li {
+			border-bottom: 1px solid #efefef;
+			&.media {
+				padding: 10px;
+				margin: 0;
+				&:hover {
+					background: lighten(#efefef, 3%);
+				}
+				a {
+					padding: 0;
+				}
+				.media-body {
+					text-align: left;
+					margin-right: 2px;
+					label {
+						font-size: 11px;
+					}
+					h5.media-heading {
+						margin-left: 0;
+						margin-bottom: 0px;
+						line-height: 20px;
+						font-weight: bold;
+					}
+					p {
+						font-size: 13px;
+					}
+				}
+			}
+			&:last-of-type {
+				border: none;
+			}
+		}
+	}
+}

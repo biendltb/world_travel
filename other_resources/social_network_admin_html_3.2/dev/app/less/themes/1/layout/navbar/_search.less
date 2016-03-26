@@ -1,0 +1,44 @@
+.navbar-nav {
+	.input-group {
+		height: @navbar-height;
+		.input-group-addon {
+			height: @navbar-height - 3px;
+			background: none;
+			border: none;
+			font-weight: bold;
+			color: #ccc;
+			position: absolute;
+			font-size: 18px;
+			top: 12px;
+		}
+		.form-control {
+			height: @navbar-height;
+			display: table;
+			left: 0;
+			padding: 0px;
+			padding-left: 38px;
+			border: none;
+			background: none;
+			&:hover, &:active, &:focus {
+				background-color: lighten(#efefef, 3%);
+				border-radius: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.navbar-primary {
+	.navbar-nav .input-group {
+		background: @primary-color;
+		.form-control {
+			.placeholder(#fff);
+			&:hover, &:active, &:focus {
+				background: none;
+			}
+		}
+		.input-group-addon {
+			color: #fff;
+		}
+	}
+}

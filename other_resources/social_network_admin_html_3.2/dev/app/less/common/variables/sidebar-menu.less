@@ -1,0 +1,65 @@
+// Sidebar
+@sidebar-background:                    #303030;
+
+@sidebar-width:                         250px;
+@sidebar-item-height:                   48px;
+@sidebar-sub-item-height:               32px;
+
+
+// Brand
+@sidebar-brand-width:                   @sidebar-width;
+@sidebar-brand-height:                  @navbar-height;
+@sidebar-brand-color:                   #ffffff;
+@sidebar-brand-color-hover:             @sidebar-brand-color;
+@sidebar-brand-background:              @primary-color;
+
+// Move down the size of navbar
+@sidebar-top:                           @sidebar-brand-height;
+
+// Custom border Top/Bottom
+@sidebar-menu-border:                   lighten(@sidebar-background, 5%);
+
+// Default
+@sidebar-item-link:                     #676767;
+@sidebar-item-link-size:                14px;
+@sidebar-item-link-weight:              600;
+@sidebar-item-icon-color:               @sidebar-item-link;
+@sidebar-item-link-active:              #ffffff;
+@sidebar-item-link-icon-active:         @sidebar-item-link-active;
+@sidebar-item-hover-color:              #ffffff;
+@sidebar-item-hover-background:         darken(@sidebar-background, 5%);
+
+// Submenu 1st Level
+@sidebar-sub-item-background:           darken(@sidebar-background, 5%);
+@sidebar-sub-item-border:               lighten(@sidebar-background, 5%);
+
+// Submenu 2nd Level
+@sidebar-sub-item-second-link-open:     darken(@sidebar-background, 5%);
+@sidebar-sub-item-second-background:    darken(@sidebar-background, 9%);
+@sidebar-sub-item-second-border:        lighten(@sidebar-background, 9%);
+
+// Collapse Icon
+@sidebar-collapse-icon-family:          'FontAwesome';
+@sidebar-collapse-icon:                 "\f067";
+@sidebar-collapse-icon-open:            "\f068";
+
+// Sidebar Category
+@sidebar-menu-category:                 @primary-color;
+@sidebar-menu-category-height:          @sidebar-item-height;
+@sidebar-menu-category-size:            16px;
+@sidebar-menu-category-weight:          600;
+@sidebar-menu-category-left:            20px;
+
+
+// Sidebar News Feed
+@sidebar-news-item-link:                #ffffff;
+@sidebar-news-item-color:               #676767;
+@sidebar-news-item-size:                12px;
+@sidebar-news-item-weight:              600;
+@sidebar-news-item-background:          lighten(@sidebar-background,2%);
+
+@sidebar-news-item-hover:               darken(@sidebar-background,1%);
+@sidebar-news-item-icon-color-hover:    @primary-color;
+@sidebar-news-item-status-size:         6px;
+@sidebar-news-item-status-success:      @success-color;
+@sidebar-news-item-status-danger:       @danger-color;

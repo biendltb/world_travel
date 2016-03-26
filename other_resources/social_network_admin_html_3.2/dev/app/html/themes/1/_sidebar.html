@@ -1,0 +1,137 @@
+<div class="sidebar left hidden-xs">
+    <a id="brand" href="index.html">Social Admin Template</a>
+    <div id="menu" data-scrollable>
+        <ul>
+            <li class="{% if (page.slug == 'profile') %} active {% endif %}">
+                <a href="../index.html">
+                    <i class="icon-paint-brush"></i> Themes
+                </a>
+            </li>
+            <li class="category">Navigation</li>
+            <li class="hasSubmenu  {% if (page.slug == 'index' or page.slug == 'timeline-list' or page.slug == 'timeline-mirror') %} open {% endif %}">
+                <a href="#timeline" data-toggle="collapse"><i class="icon-ship-wheel"></i> Timeline</a>
+                <ul class="collapse {% if (page.slug == 'index' or page.slug == 'timeline-list' or page.slug == 'timeline-mirror') %} in {% endif %}" id="timeline">
+                    <li{% if (page.slug == 'index') %} class="active"{% endif %}>
+                        <a href="index.html"><i class="fa fa-circle-o"></i> Blocks</a>
+                    </li>
+                    <li{% if (page.slug == 'timeline-list') %} class="active"{% endif %}>
+                        <a href="timeline-list.html"><i class="fa fa-circle-o"></i> Listing</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="{% if (page.slug == 'profile') %} active {% endif %}">
+                <a href="profile.html"><i class="icon-user-1"></i> Profile</a>
+            </li>
+            <li class="{% if (page.slug == 'users') %} active{% endif %}">
+                <a href="users.html"><i class="fa fa-group"></i> Users</a>
+            </li>
+            <li class="{% if (page.slug == 'messages') %} active{% endif %}">
+                <a href="messages.html"><i class="icon-comment-fill-1"></i> Messages</a>
+            </li>
+            <li class="{% if (page.slug == 'login') %} active{% endif %}">
+                <a href="login.html"><i class="icon-lock-fill"></i> Login</a>
+            </li>
+            <li class="hasSubmenu {% if (page.slug == 'buttons' or page.slug == 'icons' or page.slug == 'grid' or page.slug == 'progress' or page.slug == 'maps' or page.slug == 'forms' or page.slug == 'tables') %} open {% endif %}">
+                <a href="#components" data-toggle="collapse"><i class="icon-paint-brushes"></i>UI Components</a>
+                <ul class="collapse {% if (page.slug == 'buttons' or page.slug == 'icons' or page.slug == 'grid' or page.slug == 'progress' or page.slug == 'maps' or page.slug == 'forms' or page.slug == 'tables') %} in {% endif %}" id="components">
+                    <li class="{% if (page.slug == 'buttons') %} active{% endif %}">
+                        <a href="buttons.html"><i class="fa fa-circle-o"></i> Buttons</a>
+                    </li>
+                    <li class="{% if (page.slug == 'icons') %} active{% endif %}">
+                        <a href="icons.html"><i class="fa fa-circle-o"></i> Icons</a>
+                    </li>
+                    <li class="{% if (page.slug == 'progress') %} active{% endif %}">
+                        <a href="progress.html"><i class="fa fa-circle-o"></i> Progress</a>
+                    </li>
+                    <li class="{% if (page.slug == 'grid') %} active{% endif %}">
+                        <a href="grid.html"><i class="fa fa-circle-o"></i> Grid</a>
+                    </li>
+                    <li  class="{% if (page.slug == 'forms') %} active{% endif %}">
+                        <a href="forms.html"><i class="fa fa-circle-o"></i> Forms</a>
+                    </li>
+                    <li  class="{% if (page.slug == 'tables') %} active{% endif %}">
+                        <a href="tables.html"><i class="fa fa-circle-o"></i> Tables</a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Sample 2 Level Collapse -->
+            <li class="hasSubmenu">
+                <a href="#collapse" data-toggle="collapse">
+                    <i class="fa fa-chevron-circle-down"></i> Collapse
+                </a>
+                <ul class="collapse" id="collapse">
+                    <li class="hasSubmenu">
+                        <a href="#collapse-1" data-toggle="collapse"><i class="fa fa-circle-o"></i> Submenu</a>
+                        <ul class="collapse" id="collapse-1">
+                            <li><a href="#">Regular Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Regular Link</a></li>
+                </ul>
+            </li>
+
+            <li class="category border top">News Feeds</li>
+            <li class="reset">
+                <ul>
+                    <li class="media news-item">
+                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                        <span class="pull-left media-object">
+                            <i class="fa fa-fw fa-bell"></i>
+                        </span>
+                        <div class="media-body">
+                            <a href="" class="text-white">Adrian</a> just logged in
+                            <span class="time">2 min ago</span>
+                        </div>
+                    </li>
+                    <li class="media news-item">
+                        <span class="news-item-success pull-right "><i class="fa fa-circle"></i></span>
+                        <span class="pull-left media-object">
+                            <i class="fa fa-fw fa-bell"></i>
+                        </span>
+                        <div class="media-body">
+                            <a href="" class="text-white">Adrian</a> just added  <a href="" class="text-white">mosaicpro</a> as their office
+                            <span class="time">2 min ago</span>
+                        </div>
+                    </li>
+                    <li class="media news-item">
+                        <span class="pull-left media-object">
+                            <i class="fa fa-fw fa-bell"></i>
+                        </span>
+                        <div class="media-body">
+                            <a href="" class="text-white">Adrian</a> just logged in
+                            <span class="time">2 min ago</span>
+                        </div>
+                    </li>
+                    <li class="media news-item">
+                        <span class="pull-left media-object">
+                            <i class="fa fa-fw fa-bell"></i>
+                        </span>
+                        <div class="media-body">
+                            <a href="" class="text-white">Adrian</a> just logged in
+                            <span class="time">2 min ago</span>
+                        </div>
+                    </li>
+                    <li class="media news-item">
+                        <span class="pull-left media-object">
+                            <i class="fa fa-fw fa-bell"></i>
+                        </span>
+                        <div class="media-body">
+                            <a href="" class="text-white">Adrian</a> just logged in
+                            <span class="time">2 min ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="category">Filter</li>
+            <li class="reset">
+                <ul>
+                    <li><a href="#"><span class="fa fa-fw fa-circle-o text-success"></span> Work Related</a></li>
+                    <li><a href="#"><span class="fa fa-fw fa-circle-o text-primary"></span> Very Important</a></li>
+                    <li><a href="#"><span class="fa fa-fw fa-circle-o text-info"></span> Friends &amp; Family</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

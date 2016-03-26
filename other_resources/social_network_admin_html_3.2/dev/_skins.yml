@@ -1,0 +1,38 @@
+skins:
+  1:
+    default:
+      primary-color: "#16ae9f"
+    orange:
+      primary-color: "#e74c3c"
+    blue:
+      primary-color: "#4687ce"
+    purple:
+      primary-color: "#af86b9"
+    brown:
+      primary-color: "#c3a961"
+  2:
+    default:
+      primary-color: "#16ae9f"
+    orange:
+      primary-color: "#e74c3c"
+    blue:
+      primary-color: "#4687ce"
+    purple:
+      primary-color: "#af86b9"
+    brown:
+      primary-color: "#c3a961"
+    default-nav-inverse:
+      color-block: "#242424"
+  3:
+    default:
+      primary-color: "#16ae9f"
+    orange:
+      primary-color: "#e74c3c"
+    blue:
+      primary-color: "#4687ce"
+    purple:
+      primary-color: "#af86b9"
+    brown:
+      primary-color: "#c3a961"
+    default-nav-inverse:
+      color-block: "#242424"

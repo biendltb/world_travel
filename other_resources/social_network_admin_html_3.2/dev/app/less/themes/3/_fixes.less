@@ -1,0 +1,17 @@
+.sidebar.right { display:none; z-index: 1033; }
+
+.show-chat {
+	.sidebar.right {
+		display: block;
+	}
+	#content {
+		margin-left: auto;
+		margin-right: @sidebar-width;
+		min-width: 320px;
+	}
+	.footer {
+		left:0;
+		margin-left: auto;
+		margin-right: @sidebar-width;
+	}
+}

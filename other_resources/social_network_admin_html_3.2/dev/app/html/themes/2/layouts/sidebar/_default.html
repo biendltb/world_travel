@@ -1,0 +1,42 @@
+<div class="sidebar left hidden-xs">
+    <div id="menu" data-scrollable>
+        <ul>
+            <li><a href="index.html"><i class="icon-chevron-left"></i> Go to Social</a></li>
+            <li class="category">UI Components</li>
+            <li{% if (page.slug == 'buttons') %} class="active"{% endif %}>
+                <a href="buttons.html"><i class="fa fa-th"></i> Buttons</a>
+            </li>
+            <li{% if (page.slug == 'icons') %} class="active"{% endif %}>
+                <a href="icons.html"><i class="fa fa-paint-brush"></i> Icons</a>
+            </li>
+            <li{% if (page.slug == 'progress') %} class="active"{% endif %}>
+                <a href="progress.html"><i class="fa fa-tasks"></i> Progress</a>
+            </li>
+            <li{% if (page.slug == 'grid') %} class="active"{% endif %}>
+                <a href="grid.html"><i class="fa fa-columns"></i> Grid</a>
+            </li>
+            <li{% if (page.slug == 'forms') %} class="active"{% endif %}>
+                <a href="forms.html"><i class="fa fa-sliders"></i> Forms</a>
+            </li>
+            <li{% if (page.slug == 'tables') %} class="active"{% endif %}>
+                <a href="tables.html"><i class="fa fa-table"></i> Tables</a>
+            </li>
+
+            <!-- Sample 2 Level Collapse -->
+            <li class="hasSubmenu">
+                <a href="#collapse" data-toggle="collapse">
+                    <i class="fa fa-chevron-circle-down"></i> Collapse
+                </a>
+                <ul class="collapse" id="collapse">
+                    <li class="hasSubmenu">
+                        <a href="#collapse-1" data-toggle="collapse"><i class="fa fa-circle-o"></i> Submenu</a>
+                        <ul class="collapse" id="collapse-1">
+                            <li><a href="#">Regular Link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-circle-o"></i> Regular Link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+$subnav-height:                       70px !default;
+$cover:                               370px !default;
+
+$sidebar-top:                         $navbar-height !default;
+$navbar-primary-brand-color:          #fff !default;
+$sidebar-chat-search-height:          $subnav-height !default;
+
+$navbar-background:                   $primary-color !default;
+
+// VERTICAL CENTER FIX
+$navbar-secondary-height: $subnav-height !default;
+$navbar-secondary-padding-vertical: (($navbar-secondary-height - $line-height-computed) / 2) !default;
+
+$sidebar-chat-search-height:        $navbar-secondary-height !default;

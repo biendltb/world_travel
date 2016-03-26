@@ -1,0 +1,19 @@
+{% include "app/html/themes/3/layouts/includes/_header.html" %}
+
+    {% include "app/html/themes/3/layouts/nav/_navbar.html" %}
+    {% include "app/html/common/components/chat.html" %}
+
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include "app/html/themes/3/layouts/includes/_footer.html" %}
+
+    <!-- Vendor Scripts Bundle -->
+    <script src="js/vendor.min.js"></script>
+
+    <!-- App Scripts Bundle -->
+    <script src="js/scripts.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+.form-control {
+  box-shadow: none;
+  &:focus { box-shadow: none; }
+}
+.input-group-addon {
+  color: #797979;
+  background: #fff;
+}
+.white {
+  background: #fff;
+}
+.form-horizontal {
+  .control-label {
+    text-align: right;
+  }
+  .bootstrap-select {
+    width: 100% !important;
+  }
+}
+
+// Datepicker Custom Design
+.datepicker {
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  table tr {
+    td.active.active {
+      font-weight:bold;
+      background: $primary-color !important;
+    }
+    td span.active.active {
+      background: $primary-color !important;
+    }
+  }
+
+}
+// Colorpicker Overides
+.minicolors-swatch {
+  border:none !important;
+}
+
+// Bootstrap Slider
+
+.slider {
+  width: 100% !important;
+
+}
+.slider-track {
+  border:1px solid $panel-default-border;
+  box-shadow: none !important;
+}
+
+.slider-handle {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  box-shadow: none;
+  opacity: 1 !important;
+  border: 1px solid #efefef !important;
+  border-radius: 3px !important;
+  padding:0px 2px 0 3px;
+  height:16px;
+  margin-top:-6px !important;
+  display: inline-block;
+  color: $primary-color;
+  i {
+    position: relative;
+    top:-1px;
+  }
+}
+.slider-selection {
+  background: $primary-color !important;
+}

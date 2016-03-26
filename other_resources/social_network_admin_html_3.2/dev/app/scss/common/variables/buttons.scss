@@ -1,0 +1,37 @@
+$btn-font-weight:             500;
+// Default Button
+$btn-default-color:           #444;
+$btn-default-border:          #e7e7e7;
+$btn-default-bg:              lighten(#e7e7e7,3%);
+
+
+// Primary Button
+$btn-primary-color:           #fff;
+$btn-primary-bg:              $primary-color;
+$btn-primary-border:          $primary-color;
+
+
+// Success Button
+$btn-success-color:           #fff;
+$btn-success-bg:              $success-color;
+$btn-success-border:          $success-color;
+
+// Danger Button
+$btn-danger-color:            #fff;
+$btn-danger-bg:               $danger-color;
+$btn-danger-border:           $danger-color;
+
+// Info Button
+$btn-info-color:            #fff;
+$btn-info-bg:               $info-color;
+$btn-info-border:           $info-color;
+
+// Warning Button
+$btn-warning-color:            #fff;
+$btn-warning-bg:               $warning-color;
+$btn-warning-border:           $warning-color;
+
+// Inverse Button
+$btn-inverse-color:            #fff;
+$btn-inverse-bg:               $inverse-color;
+$btn-inverse-border:           $inverse-color;

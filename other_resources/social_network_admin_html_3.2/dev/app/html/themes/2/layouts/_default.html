@@ -1,0 +1,18 @@
+{% include "app/html/themes/2/layouts/includes/_header.html" %}
+
+    {% include "app/html/themes/2/layouts/nav/_navbar.html" %}
+    {% include "app/html/themes/2/layouts/sidebar/_default.html" %}
+
+    <div id="content">
+        <div class="container-fluid">{% block content %}{% endblock %}</div>
+        {% include "app/html/themes/2/layouts/includes/_footer.html" %}
+    </div>
+
+    <!-- Vendor Scripts Bundle -->
+    <script src="js/vendor.min.js"></script>
+
+    <!-- App Scripts Bundle -->
+    <script src="js/scripts.min.js"></script>
+
+</body>
+</html>

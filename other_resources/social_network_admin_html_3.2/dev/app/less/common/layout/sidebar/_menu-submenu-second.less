@@ -1,0 +1,24 @@
+// Second Submenu Style
+#menu ul li ul li.open {
+	> a {
+		background: @sidebar-sub-item-second-link-open;
+	}
+	> ul {
+		background: @sidebar-sub-item-second-background;
+		border-top: 1px solid @sidebar-sub-item-second-border;
+		border-bottom: 1px solid @sidebar-sub-item-second-border;
+	}
+}
+
+#menu ul li ul li > {
+	ul {
+		li {
+			a {
+				padding: 5px 0 5px 4 0px;
+			}
+			&.open {
+				background: darken(@sidebar-background, 5%);
+			}
+		}
+	}
+}

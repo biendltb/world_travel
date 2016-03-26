@@ -1,0 +1,39 @@
+.weather-svg {
+	.list {
+		border-bottom: 1px solid #efefef;
+		font-weight: bold;
+		font-size: 12px;
+		background: lighten(#efefef, 4%);
+		color: #797979;
+		margin-bottom: 10px;
+		.row > .col-xs-4 {
+			padding-top: 5px;
+			padding-bottom: 5px;
+			&:not(:last-of-type) {
+				border-right: 1px solid #efefef;
+			}
+		}
+		svg {
+			width: 40%;
+			color: @primary-color;
+		}
+	}
+	.today {
+		svg {
+			width: 200px;
+			color: @primary-color;
+		}
+		.details {
+			display: inline-block;
+			border: 1px solid #efefef;
+			padding: 8px 10px;
+			background: lighten(#efefef, 4%);
+			font-size: 16px;
+			strong {
+				color: @primary-color;
+			}
+			margin-bottom: 20px;
+		}
+	}
+
+}

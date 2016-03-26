@@ -1,0 +1,123 @@
+.btn {
+	font-weight: 500;
+}
+
+.btn-default {
+	&:hover {
+		background: #fff;
+		border-color: #e7e7e7;
+	}
+}
+
+.btn-primary {
+	i {
+		color: #fff !important;
+	}
+}
+
+.btn-white {
+
+	&:hover {
+		background: @panel-default-border;
+		border-color: @panel-default-border;
+		i {
+			color: @text-color !important;
+		}
+	}
+}
+
+// New Buttons
+.btn-white {
+	.button-variant(#444444; #fff; @panel-default-border);
+}
+
+// Inverse
+.btn-inverse {
+	.button-variant(@btn-inverse-color; @btn-inverse-bg; @btn-inverse-border);
+}
+
+.stroke-hover(@color) {
+	background: @color;
+	border-color: @color;
+	color: #ffffff;
+	i {
+		color: #ffffff !important;
+	}
+}
+
+// Stroke
+.btn-stroke {
+	background: none;
+	&.btn-default {
+		&:hover {
+			background: #efefef;
+		}
+	}
+	&.btn-primary {
+		color: @primary-color;
+		i {
+			color: @primary-color !important;
+		}
+		&:hover {
+			.stroke-hover(@primary-color);
+		}
+	}
+	&.btn-success {
+		color: @success-color;
+		&:hover {
+			.stroke-hover(@success-color);
+		}
+	}
+	&.btn-info {
+		color: @info-color;
+		&:hover {
+			.stroke-hover(@info-color);
+		}
+	}
+	&.btn-danger {
+		color: @danger-color;
+		&:hover {
+			.stroke-hover(@danger-color);
+		}
+	}
+	&.btn-inverse {
+		color: @inverse-color;
+		&:hover {
+			.stroke-hover(@inverse-color);
+		}
+	}
+	&.btn-warning {
+		color: @warning-color;
+		&:hover {
+			.stroke-hover(@warning-color);
+		}
+	}
+}
+
+.btn-circle {
+	border-radius: 50%;
+	&.btn {
+		padding-left: 0;
+		padding-right: 0;
+		width: 34px;
+	}
+}
+
+.btn-icon-stacked {
+	text-align: left;
+	padding: 10px 10px 10px 45px;
+	position: relative;
+	i {
+		display: block;
+		position: absolute;
+		left: 12px;
+		top: 18px;
+	}
+}
+
+// Bootstrap Select
+.bootstrap-select {
+	.btn-white {
+		color: #797979;
+	}
+}

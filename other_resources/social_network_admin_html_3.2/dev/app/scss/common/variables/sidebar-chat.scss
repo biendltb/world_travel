@@ -1,0 +1,37 @@
+$sidebar-chat-background:                   $sidebar-background;
+
+$sidebar-chat-search-background:            darken($sidebar-background,2%);
+$sidebar-chat-search-input-background:      lighten($sidebar-background,3%);
+$sidebar-chat-search-placeholder-color:     lighten($sidebar-background,30%);
+$sidebar-chat-search-input-color:           #ffffff;
+
+// Chat Filter
+$sidebar-chat-filter-background:            lighten($sidebar-background,3%);
+$sidebar-chat-filter-link:                  #808080;
+$sidebar-chat-filter-link-hover-background: darken($sidebar-background,4%);
+$sidebar-chat-filter-link-hover-color:      #ffffff;
+$sidebar-chat-filter-border:                $sidebar-background;
+
+// Chat Item
+$sidebar-chat-item-contact-color:           #efefef;
+$sidebar-chat-item-border-bottom:           lighten($sidebar-background,4%);
+$sidebar-chat-item-hover-background:        lighten($sidebar-background,3%);
+
+
+$sidebar-chat-item-circle-online:           $success-color;
+$sidebar-chat-item-circle-away:             $warning-color;
+$sidebar-chat-item-circle-busy:             $danger-color;
+
+// Chat Window
+$sidebar-chat-window-shadow:                -3px 3px 8px rgba(0,0,0, 0.1);
+$sidebar-chat-window-width:                 240px;
+// Chat Window :: Heading
+$sidebar-chat-window-heading-background:    $primary-color;
+$sidebar-chat-window-heading-color:         #ffffff;
+// Chat Window :: Border
+$sidebar-chat-window-border-color:          #e0e0e0;
+$sidebar-chat-window-content-background:    lighten(#efefef,4%);
+// Chat Window :: Message
+$sidebar-chat-window-message-border:        $panel-default-border;
+$sidebar-chat-window-message-background:    #ffffff;
+$sidebar-chat-window-message-caret:         darken($sidebar-chat-window-message-border,5%);

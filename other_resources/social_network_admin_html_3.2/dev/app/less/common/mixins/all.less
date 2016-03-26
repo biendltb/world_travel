@@ -1,0 +1,36 @@
+.padding-all-half(@x) {
+	padding: @x/2;
+}
+
+// Datepicker mixin & variables
+.border-radius(@size) {
+	border-radius: @size @size @size @size;
+}
+
+.dropdown-default-style() {
+	.open .dropdown-menu {
+		border-top: 0;
+		border-bottom: 3px solid;
+		border-color: @navbar-border-bottom;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0;
+		> li {
+			> a {
+				&, &:focus {
+					color: @primary-color;
+					font-weight: 500;
+					padding: 5px 8px;
+					border-top: 1px solid #efefef;
+					&:hover {
+						color: #797979;
+					}
+				}
+			}
+			&.active > a {
+				background: @primary-color;
+				color: #fff;
+			}
+		}
+	}
+}

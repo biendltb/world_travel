@@ -1,0 +1,15 @@
+.sidebar {
+  position: fixed;
+  bottom: 0;
+  width: $sidebar-width;
+  background: $sidebar-background;
+  z-index: 1033;
+}
+.left {
+  left: 0;
+  top: $sidebar-top;
+}
+.right {
+  right:0;
+  top: 0;
+}

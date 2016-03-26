@@ -1,0 +1,23 @@
+{% include "app/html/themes/2/layouts/includes/_header.html" %}
+
+    {% include "app/html/themes/2/layouts/nav/_navbar.html" %}
+    {% include "app/html/themes/2/layouts/sidebar/_profile_private.html" %}
+    {% include "app/html/common/components/chat.html" %}
+
+    <div id="content">
+        {% include "app/html/themes/2/layouts/nav/_subnav_private.html" %}
+        <div class="container-fluid">
+            {% block content %}{% endblock %}
+        </div>
+        {% include "app/html/themes/2/layouts/includes/_footer.html" %}
+
+    </div><!-- // Content -->
+
+    <!-- Vendor Scripts Bundle -->
+    <script src="js/vendor.min.js"></script>
+
+    <!-- App Scripts Bundle -->
+    <script src="js/scripts.min.js"></script>
+
+</body>
+</html>

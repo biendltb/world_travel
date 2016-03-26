@@ -1,0 +1,30 @@
+.navbar-nav {
+  .input-group {
+    height: $navbar-height;
+    background: #fff;
+    .input-group-addon {
+      height: $navbar-height - 3px;
+      background: none;
+      border: none;
+      font-weight: bold;
+      color: #ccc;
+      position: absolute;
+      font-size: 18px;
+      top: 12px;
+    }
+    .form-control {
+      height: $navbar-height;
+      display: table;
+      left: 0;
+      padding: 0px;
+      padding-left: 38px;
+      border: none;
+      background: none;
+      &:hover, &:active, &:focus {
+        background-color: lighten(#efefef, 3%);
+        border-radius: none;
+        box-shadow: none;
+      }
+    }
+  }
+}

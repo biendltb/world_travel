@@ -1,0 +1,21 @@
+.cover {
+  max-height: 300px;
+  overflow:hidden;
+  position: relative;
+
+  img {
+    width:100%;
+  }
+
+  .btn-cover {
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    font-size: 16px;
+    padding:2px 3px;
+    @include button-variant(#fff, rgba(0,0,0,0.5), transparent);
+    &:hover {
+      background-color: rgba(0,0,0,0.7);
+    }
+  }
+}

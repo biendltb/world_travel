@@ -1,0 +1,45 @@
+{
+    "name": "Social",
+    "version": "3.2.0",
+    "authors": [
+        "Mosaicpro <contact@mosaicpro.biz> (http://mosaicpro.biz)"
+    ],
+    "description": "Social Network Admin & Website Template",
+    "license": "http://themeforest.net/licenses",
+    "private": true,
+    "overrides": {
+        "jquery.breakpoints": {
+            "main": "./breakpoints.js"
+        },
+        "Grid-A-Licious": {
+            "main": "./jquery.grid-a-licious.js"
+        },
+        "datatables-plugins": {
+            "main": "./integration/bootstrap/3/dataTables.bootstrap.js"
+        }
+    },
+    "dependencies": {
+        "bootstrap": "3.2.0",
+        "font-awesome": "~4.2.0",
+        "holderjs": "~2.3.2",
+        "jquery.breakpoints": "*",
+        "morrisjs": "~0.5.1",
+        "jquery.nicescroll": "be4f1a2bfe0795f31fb8d1f7812bed748062633e",
+        "bootstrap-rtl": "~0.9.16",
+        "datatables": "~1.10.2",
+        "datatables-plugins": "*",
+        "Grid-A-Licious": "https://github.com/suprb/Grid-A-Licious.git",
+        "animated-climacons": "https://github.com/noahblon/animated-climacons.git",
+        "bootstrap-select": "~1.6.2",
+        "jquery.cookie": "~1.4.1",
+        "bootstrap3-datepicker": "~1.2.1",
+        "jquery-minicolors": "~2.1.7",
+        "seiyria-bootstrap-slider": "~4.0.1",
+        "handlebars": "~2.0.0",
+        "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#3.2.0",
+        "highlightjs": "~8.3.0"
+    },
+    "resolutions": {
+        "bootstrap": "3.2.0"
+    }
+}

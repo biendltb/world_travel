@@ -1,0 +1,59 @@
+// General Navbar Styling
+.navbar-default {
+  border-bottom:2px solid $navbar-border-bottom;
+  @media (min-width: $screen-sm) {
+    .container-fluid {
+      padding-left: 0;
+    }
+  }
+  .navbar-nav > li {
+    border-right: 1px solid #efefef;
+
+    > a {
+      color: #424242;
+      font-size: 16px;
+      font-weight: 400;
+      i {
+        color: lighten(#797979, 15%);
+      }
+      &:hover {
+        background: lighten(#efefef, 2%);
+        i { color :$primary-color; }
+      }
+
+    }
+  }
+  .navbar-right > li {
+    &:last-of-type {
+      border-left: 1px solid #efefef;
+      border-right: none;
+    }
+  }
+  .navbar-right {
+    @media (max-width: $screen-sm) {
+      margin:0;
+      li a {
+        line-height: 36px;
+      }
+    }
+  }
+}
+@media (max-width:$screen-sm) {
+  .show-chat .navbar-nav,  .show-sidebar .navbar-nav {
+    display: none;
+    &.navbar-right {
+      display: block;
+    }
+  }
+  .navbar-nav {
+    float: right;
+    @media (max-width: $screen-sm) {
+      margin: 0;
+      .dropdown-menu {float:right !important; right:0; left:auto;}
+      border-left: 1px solid #efefef;
+      a.dropdown-toggle {
+        line-height: 36px;
+      }
+    }
+  }
+}

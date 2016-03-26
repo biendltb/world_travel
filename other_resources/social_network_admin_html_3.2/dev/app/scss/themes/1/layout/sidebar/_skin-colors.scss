@@ -1,0 +1,18 @@
+.colors {
+  margin-left:20px !important;
+  margin-bottom:10px;
+  > li {
+
+    display: inline-block;
+    margin-bottom:5px;
+    > a {
+      display: block;
+      width: 6px;
+      height: 6px;
+      padding:6px !important;
+
+      background: $primary-color;
+      border-radius: 6px;
+    }
+  }
+}

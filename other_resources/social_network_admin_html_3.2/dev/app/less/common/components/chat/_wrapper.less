@@ -1,0 +1,19 @@
+.show-chat {
+	.sidebar.left {
+		display: none !important;
+	}
+	.sidebar.right {
+		display: block !important;
+		z-index: 1033;
+	}
+	#content {
+		margin-left: auto;
+		margin-right: @sidebar-width;
+		min-width: 320px;
+	}
+	.footer {
+		left: 0;
+		margin-left: auto;
+		margin-right: @sidebar-width;
+	}
+}

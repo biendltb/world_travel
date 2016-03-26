@@ -1,0 +1,38 @@
+// General Navbar Styling
+.navbar-default {
+	border-bottom: 2px solid @navbar-border-bottom;
+
+	.navbar-nav {
+		.dropdown-default-style();
+	}
+
+	.navbar-brand {
+		border-right: 1px solid #efefef;
+	}
+
+	.navbar-nav > li {
+		border-right: 1px solid #efefef;
+
+		> a {
+			color: #424242;
+			font-size: 16px;
+			font-weight: 400;
+			i {
+				color: lighten(#797979, 15%);
+			}
+			&:hover {
+				background: lighten(#efefef, 2%);
+				i {
+					color: @primary-color;
+				}
+			}
+
+		}
+	}
+	.navbar-right > li {
+		&:last-of-type {
+			border-left: 1px solid #efefef;
+			border-right: none;
+		}
+	}
+}

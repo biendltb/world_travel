@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Social Network Template</title>
+
+    <!-- Docs Styling -->
+    <link href="../dist/themes/1/css/default.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="docs">
+
+    <!-- Top Navbar -->
+    <div class="navbar navbar-fixed-top" role="navigation">
+
+        <!-- Top Bar -->
+        <div class="navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a href="index.html">Package Overview</a>
+                        </li>
+                        <li><a href="dev.html">Development Suite</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- //Top Navbar -->
+    <div class="sidebar left hidden-xs">
+        <a id="brand" href="#">Social Documentation</a>
+        <div id="menu">
+            <ul class="nav">
+                <li class="active"><a href="#whats-included">1. What's Included</a>
+                </li>
+                <li><a href="#javascript">2. JavaScript</a>
+                </li>
+                <li><a href="#stylesheet">3. Styling</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container-fluid">
+            <h1 class="h3">Package Overview</h1>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>This template is built with Bootstrap 3.2.0 and provides multiple themes, layouts and skins. The package is structured in two branches:</p>
+                    <ul class="margin-none">
+                        <li>
+                            <strong>dist</strong> - includes the static end product (HTML, images, compiled CSS and JavaScript)</li>
+                        <li>
+                            <strong>dev</strong> - includes a full development suite based on the latest tools in front-end development, like Grunt, Jekyll, LESS, SASS and even a dedicated Vagrant environment so you can be developing in minutes with zero effort.</li>
+                    </ul>
+                </div>
+            </div>
+            <h3 id="whats-included">What's Included</h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">Package Structure</div>
+                <div class="panel-body-lrb">
+                    <div class="highlight">
+                        <pre>
+<code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">social-package</span>&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">dist</span>&gt;</span>      <span class="hljs-comment">&lt;!-- Static branch: Includes static HTML files, compiled CSS, images, individual themes and skins. --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">dev</span>&gt;</span>       <span class="hljs-comment">&lt;!-- Development branch: Includes Jekyll source files, un-processed Less, Sass and JavaScript. --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">docs</span>&gt;</span>      <span class="hljs-comment">&lt;!-- This documentation --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">vagrant</span>&gt;</span>   <span class="hljs-comment">&lt;!-- Vagrant Configuration &amp; Scripts --&gt;</span>
+└── Vagrantfile <span class="hljs-comment">&lt;!-- Vagrant Environment File --&gt;</span></code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Static Branch Structure</div>
+                <div class="panel-body">
+                    The structure of <code>dist</code> branch or more simple, the static end product.
+                </div>
+                <div class="panel-body-lrb">
+                    <div class="highlight">
+                        <pre>
+<code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">themes</span>&gt;</span>
+│
+│   <span class="hljs-comment">&lt;!-- Theme 1 --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">1</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">css</span>&gt;</span>
+│   │   └── default.css <span class="hljs-comment">&lt;!-- Stylesheet Bundle with App &amp; Vendor Styling --&gt;</span>
+│   │
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">fonts</span>&gt;</span>
+│   │   ├── <span class="hljs-comment">&lt;!-- Font-Awesome font files copied from dev/bower_components/font-awesome/fonts --&gt;</span>
+│   │   ├── <span class="hljs-comment">&lt;!-- Picto Foundry font files copied from dev/app/icons/pictoicons/fonts --&gt;</span>
+│   │   ├── <span class="hljs-comment">&lt;!-- Glyphicons font files copied from dev/bower_components/bootstrap/fonts--&gt;</span>
+│   │
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">images</span>&gt;</span>
+│   │   └── <span class="hljs-comment">&lt;!-- Images Folder --&gt;</span>
+│   │
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">js</span>&gt;</span>
+│   │   ├── scripts.js      <span class="hljs-comment">&lt;!-- Application Scripts Bundle --&gt;</span>
+│   │   ├── scripts.min.js  <span class="hljs-comment">&lt;!-- Minified scripts.js --&gt;</span>
+│   │   ├── vendor.js       <span class="hljs-comment">&lt;!-- Vendor Scripts Bundle --&gt;</span>
+│   │   └── vendor.min.js   <span class="hljs-comment">&lt;!-- Minified vendor.js --&gt;</span>
+│   │
+│   │   <span class="hljs-comment">&lt;!-- Site Pages --&gt;</span>
+│   ├── pricing.html
+│   ├── login.html
+│   ├── messages.html
+│   ├── grid.html
+│   ├── profile.html
+│   ├── icons.html
+│   ├── buttons.html
+│   ├── ui.html
+│   ├── widgets.html
+│   ├── users.html
+│   ├── blank.html
+│   ├── tables.html
+│   ├── timeline-list.html
+│   ├── progress.html
+│   ├── forms.html
+│   └── index.html
+│
+│   <span class="hljs-comment">&lt;!-- Theme 2 --&gt;</span>
+└── <span class="hljs-tag">&lt;<span class="hljs-title">2</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">css</span>&gt;</span>       <span class="hljs-comment">&lt;!-- Same as Theme 1 --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">fonts</span>&gt;</span>     <span class="hljs-comment">&lt;!-- Same as Theme 1 --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">images</span>&gt;</span>    <span class="hljs-comment">&lt;!-- Images Folder --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">js</span>&gt;</span>        <span class="hljs-comment">&lt;!-- Same as Theme 1 --&gt;</span>
+│   │
+│   <span class="hljs-comment">&lt;!-- Site Pages: Same as theme 1 plus these extra pages --&gt;</span>
+│   ├── user-private-blank.html
+│   ├── user-private-messages.html
+│   ├── user-private-profile.html
+│   ├── user-private-timeline.html
+│   ├── user-private-users.html
+│   ├── user-public-blank.html
+│   ├── user-public-profile.html
+│   └── user-public-users.html</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Development Branch Structure</div>
+                <div class="panel-body">
+                    The structure of <code>dev</code> branch or more simple, the files from our development suite used to build <code>dist</code>
+                </div>
+                <div class="panel-body-lrb">
+                    <div class="highlight">
+                        <pre>
+<code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">dev</span>&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">app</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>       <span class="hljs-comment">&lt;!-- Template Files &amp; Components --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">icons</span>&gt;</span>      <span class="hljs-comment">&lt;!-- Custom Icons (Picto Icons)--&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">images</span>&gt;</span>     <span class="hljs-comment">&lt;!-- Images used in the template --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">js</span>&gt;</span>         <span class="hljs-comment">&lt;!-- Custom APP Scripts --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">less</span>&gt;</span>       <span class="hljs-comment">&lt;!-- LESS FILES required to generate CSS from LESS --&gt;</span>
+│   └── <span class="hljs-tag">&lt;<span class="hljs-title">scss</span>&gt;</span>       <span class="hljs-comment">&lt;!-- SASS FILES required to generate CSS from SASS --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">grunt</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">utils</span>&gt;</span>      <span class="hljs-comment">&lt;!-- Utilities used within tasks --&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">tasks</span>&gt;</span>
+│   │   ├── autoprefixer.js     <span class="hljs-comment">&lt;!-- Parse CSS and add vendor prefixes to CSS rules automatically --&gt;</span>
+│   │   ├── browserify.js       <span class="hljs-comment">&lt;!-- Compiles application scripts bundles --&gt;</span>
+│   │   ├── browserSync.js      <span class="hljs-comment">&lt;!-- Time-saving synchronised browser testing with built-in http server, code sync and action sync across multiple devices --&gt;</span>
+│   │   ├── build.js            <span class="hljs-comment">&lt;!-- Build the various parts of the application in one go --&gt;</span>
+│   │   ├── clean.js            <span class="hljs-comment">&lt;!-- Clean files and folders --&gt;</span>
+│   │   ├── concat.js           <span class="hljs-comment">&lt;!-- Concatenate files --&gt;</span>
+│   │   ├── copy.js             <span class="hljs-comment">&lt;!-- Copy files and folders --&gt;</span>
+│   │   ├── cssmin.js           <span class="hljs-comment">&lt;!-- Compress CSS files --&gt;</span>
+│   │   ├── default.js          <span class="hljs-comment">&lt;!-- the default task to run when running grunt without specifying a task --&gt;</span>
+│   │   ├── discover.js         <span class="hljs-comment">&lt;!-- special task for automatically generating a scripts vendor bundle from all the installed bower components --&gt;</span>
+│   │   ├── jekyll.js           <span class="hljs-comment">&lt;!-- compiles all jekyll files to html --&gt;</span>
+│   │   ├── jshint.js           <span class="hljs-comment">&lt;!-- Validate JavaScript files --&gt;</span>
+│   │   ├── less.js             <span class="hljs-comment">&lt;!-- compile LESS to CSS --&gt;</span>
+│   │   ├── sass.js             <span class="hljs-comment">&lt;!-- compile SASS to CSS --&gt;</span>
+│   │   ├── shell.js            <span class="hljs-comment">&lt;!-- execute shell commands --&gt;</span>
+│   │   ├── uglify.js           <span class="hljs-comment">&lt;!-- Compress JavaScript files --&gt;</span>
+│   │   └── watch.js            <span class="hljs-comment">&lt;!-- Run predefined tasks whenever watched file patterns are added, changed or deleted --&gt;</span>
+│   └── config.js
+├── <span class="hljs-tag">&lt;<span class="hljs-title">rb</span>&gt;</span>             <span class="hljs-comment">&lt;!-- Ruby Generators (LESS to SASS) --&gt;</span>
+├── Gruntfile.js     <span class="hljs-comment">&lt;!-- Grunt Tasks Loader (/grunt/tasks) --&gt;</span>
+├── _config.yml      <span class="hljs-comment">&lt;!-- Config file required to generate the app/html --&gt;</span>
+├── _skins.yml       <span class="hljs-comment">&lt;!-- Skins Config - used in Jekyll to generate the Skin switcher into HTML --&gt;</span>
+├── bower.json       <span class="hljs-comment">&lt;!-- File required to install Bower Components --&gt;</span>
+├── package.json     <span class="hljs-comment">&lt;!-- File required to install Node Modules for Grunt --&gt;</span>
+├── Gemfile          <span class="hljs-comment">&lt;!-- The Gemfile describes the gem dependencies required to execute associated Ruby code --&gt;</span>
+├── Rakefile         <span class="hljs-comment">&lt;!-- The Rakefile is tailored to specifying tasks and actions for Ruby --&gt;</span></code></pre>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>To make use of the development suite, depending on the specific functionality you'd like, you need to have installed node with npm, ruby, bower, grunt, gem, bundler and jekyll.</p>
+                    <p class="margin-none">
+                        <strong>Easy alternative:</strong> If you'd like to experiment with the development suite but not bother with installing and configuring all these various tools, you can use the included Vagrant Environment - a dedicated virtual environment with everything you need pre-installed. You'll get a fully isolated virtual machine and be up &amp; running in minutes. See more about <a href="dev.html">how to use Vagrant</a> on the development suite documentation.</p>
+                </div>
+            </div>
+            <hr/>
+            <h3 id="javascript">JavaScript</h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Application scripts</h4>
+                </div>
+                <div class="panel-body">
+                    <p class="margin-none">All the various custom application scripts are bundled in a single file at <code>dist/&lt;theme_name&gt;/js/scripts.js</code> &amp; also into a minified version <code>scripts.min.js</code> within the same directory.</p>
+                </div>
+                <div class="panel-heading">
+                    <h4 class="panel-title">Vendor scripts</h4>
+                </div>
+                <div class="panel-body">
+                    <p>All the vendor and 3rd party javascript files are bundled into a single file at <code>dist&lt;theme&gt;/js/vendor.js</code> &amp; also into a minified version <code>vendor.min.js</code> within the same directory.</p>
+                    <p class="margin-none">Here's a breakdown of plugins we used as well as the exact version, branch, tag or commit of each library:</p>
+                </div>
+                <div class="panel-body-lrb">
+                    <div class="highlight">
+                        <pre>
+<code class="hljs html">├── Grid-A-Licious#b7a75df04d                       <span class="hljs-comment">&lt;!-- Javascript Grids --&gt;</span>
+├── animated-climacons#a2c1d33e43                   <span class="hljs-comment">&lt;!-- Animated Weather Icons  --&gt;</span>
+├── bootstrap#3.2.0                                 <span class="hljs-comment">&lt;!-- Bootstrap Front-end framework --&gt;</span>
+├── bootstrap-sass#3.2.0 (latest is 3.2.0+2)        <span class="hljs-comment">&lt;!-- Bootstrap SASS --&gt;</span>
+├── bootstrap-select#1.6.3                          <span class="hljs-comment">&lt;!-- Forms Select for Bootstrap --&gt;</span>
+├── bootstrap3-datepicker#1.2.1                     <span class="hljs-comment">&lt;!-- Datepicker for Bootstrap --&gt;</span>
+├── datatables#1.10.3                               <span class="hljs-comment">&lt;!-- Javascript Tables --&gt;</span>
+├── datatables-plugins#f99d15aa1d                   <span class="hljs-comment">&lt;!-- Javascript Table Plugins (required by datatables) --&gt;</span>
+├── font-awesome#4.2.0                              <span class="hljs-comment">&lt;!-- Font Awesome Icons --&gt;</span>
+├── handlebars#2.0.0                                <span class="hljs-comment">&lt;!-- Javascript Template Engine --&gt;</span>
+├── holderjs#2.3.2 (latest is 2.4.0)                <span class="hljs-comment">&lt;!-- Image Holder --&gt;</span>
+├── jquery-minicolors#2.1.7                         <span class="hljs-comment">&lt;!-- Javascript Color Picker --&gt;</span>
+├── jquery.breakpoints#9310e15aea                   <span class="hljs-comment">&lt;!-- Javascript breakpoints for your responsive design --&gt;</span>
+├── jquery.cookie#1.4.1                             <span class="hljs-comment">&lt;!-- Jquery Cookie --&gt;</span>
+├── jquery.nicescroll#be4f1a2bfe                    <span class="hljs-comment">&lt;!-- Jquery NiceScroll (scroll) --&gt;</span>
+├── morrisjs#0.5.1                                  <span class="hljs-comment">&lt;!-- Charts --&gt;</span>
+├── seiyria-bootstrap-slider#4.0.8                  <span class="hljs-comment">&lt;!-- Bootstrap Sliders --&gt;</span></code></pre>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <strong>PRO TIP:</strong> You can get an updated list of all the various libraries installed and also check for available updates for each library in seconds, anytime! Just go into a
+                    <em>Terminal</em> to the <code>dev</code> directory and type <code>bower list</code>.
+                </div>
+            </div>
+            <hr/>
+            <h3 id="stylesheet">Styling</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>This amazing theme supports CSS pre-processing, not just from one, but two of the top industry-approved and mass-adopted CSS pre-processors:
+                        <strong>Less</strong> and
+                        <strong>Sass (CSS with superpowers)</strong>
+                        </strong>.</p>
+                    <p class="margin-none">All the styling source is located within <code>dev/app/less</code> or <code>dev/app/scss</code> directories and are broken down in the following:</p>
+                </div>
+                <div class="panel-body-lrb">
+                    <div class="highlight">
+                        <pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">common</span>&gt;</span> <span class="hljs-comment">&lt;!-- Common Styling used for both Theme 1 &amp; 2 --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">components</span>&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">mixins</span>&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">variables</span>&gt;</span>
+├── _app.less
+├── _demo.less
+├── _vendor.less
+├── common.less
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">demo</span>&gt;</span> <span class="hljs-comment">&lt;!-- Styling used for DEMO purposes (can be removed) --&gt;</span>
+├── skins.less
+├── demo.less
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">skins</span>&gt;</span> <span class="hljs-comment">&lt;!-- Styling used for Skins --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">1</span>&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">2</span>&gt;</span>
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">themes</span>&gt;</span> <span class="hljs-comment">&lt;!-- Specific Theme Styling --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">1</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">layout</span>&gt;</span>
+│   ├── _cover.less
+│   ├── _helpers.less
+│   ├── _scaffolding.less
+│   ├── _styles.less
+│   ├── _variables.less
+│   └── default.less <span class="hljs-comment">&lt;!-- Loads the required partials for theme 1 --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">2</span>&gt;</span>
+│   ├── <span class="hljs-tag">&lt;<span class="hljs-title">layout</span>&gt;</span>
+│   ├── _cover.less
+│   ├── _scaffolding.less
+│   ├── _styles.less
+│   ├── _variables.less
+│   └── default.less <span class="hljs-comment">&lt;!-- Loads the required partials for theme 2 --&gt;</span>
+│
+<span class="hljs-tag">&lt;<span class="hljs-title">vendor</span>&gt;</span> <span class="hljs-comment">&lt;!-- 3rd Party Styling (required for LESS to SASS conversion) --&gt;</span>
+├── <span class="hljs-tag">&lt;<span class="hljs-title">bootstrap</span>&gt;</span>
+└── <span class="hljs-tag">&lt;<span class="hljs-title">bootstrap-select</span>&gt;</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer text-center">
+            Social Network Template - Copyright 2014
+        </div>
+    </div>
+
+    <!-- Vendor Scripts Bundle -->
+    <script src="../dist/themes/1/js/vendor.min.js"></script>
+
+    <!-- App Scripts Bundle -->
+    <script src="js/docs.min.js"></script>
+</body>
+</html>

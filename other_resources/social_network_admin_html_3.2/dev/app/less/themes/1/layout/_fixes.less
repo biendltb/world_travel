@@ -1,0 +1,20 @@
+@media (min-width: @screen-sm) {
+  .navbar-fixed-top {
+    left: @sidebar-width;
+  }
+}
+// Content Fix
+@media (max-width: @screen-sm) {
+  .navbar .container-fluid {
+    padding-right: 0;
+  }
+}
+
+.show-chat {
+  .chat-window-container {
+    right: @sidebar-width;
+  }
+  .navbar-fixed-top {
+    left: 0;
+  }
+}

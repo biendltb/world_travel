@@ -1,0 +1,31 @@
+// First Submenu Style
+#menu ul li.open {
+	> ul {
+		background: @sidebar-sub-item-background;
+		border-top: 1px solid @sidebar-sub-item-border;
+		border-bottom: 1px solid @sidebar-sub-item-border;
+	}
+}
+
+#menu ul li > {
+	ul {
+		li {
+			a {
+				line-height: @sidebar-item-height - 18;
+				padding-left: 20px;
+				font-size: 13px;
+				[class*="icon-"] {
+					font-size: 1em;
+				}
+				// Font-Awesome Icon Positioning
+				[class*="fa fa-"] {
+					font-size: 14px;
+				}
+			}
+			&.open {
+				background: @sidebar-background;
+			}
+
+		}
+	}
+}

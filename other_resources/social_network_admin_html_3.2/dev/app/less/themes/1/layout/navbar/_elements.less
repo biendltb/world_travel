@@ -1,0 +1,39 @@
+@media (max-width: @screen-sm) {
+	.show-chat .navbar-nav, .show-sidebar .navbar-nav {
+		display: none;
+		&.navbar-right {
+			display: block;
+		}
+	}
+
+	.navbar-right {
+		margin: 0;
+		float: right;
+		> li > a {
+			padding: 0 15px;
+			height: 56px;
+			line-height: 56px;
+		}
+	}
+
+	.navbar-nav.navbar-user {
+		float: right;
+		margin: 0;
+
+		.dropdown-menu {
+			right: 0;
+			left: auto;
+			margin-top: 2px;
+			position: absolute;
+			background: #fff;
+		}
+
+		border-left: 1px solid #efefef;
+	}
+
+	.navbar-primary {
+		.navbar-nav.navbar-user {
+			border-left: none;
+		}
+	}
+}

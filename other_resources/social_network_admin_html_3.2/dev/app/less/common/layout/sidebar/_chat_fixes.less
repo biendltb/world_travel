@@ -1,0 +1,14 @@
+.show-sidebar {
+	&.show-chat {
+		.sidebar {
+			display: none !important;
+		}
+		.navbar-fixed-top {
+			right: @sidebar-width;
+		}
+		#content {
+			margin-left: 0;
+			margin-right: @sidebar-width;
+		}
+	}
+}

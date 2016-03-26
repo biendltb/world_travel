@@ -1,0 +1,14 @@
+---
+ip: "192.168.10.10"
+memory: 4096
+cpus: 4
+
+synced_folder:
+  from: /Code/html/social3/social3
+  to: /home/vagrant/social
+  type: nfs
+
+authorize: /Users/lazabogdan/.ssh/id_rsa.pub
+
+keys:
+    - /Users/lazabogdan/.ssh/id_rsa

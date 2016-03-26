@@ -1,0 +1,14 @@
+.table {
+  .progress {
+    margin-top:2px; margin-bottom:0;
+    .progress-bar {
+      transition: all 1s ease-in-out;
+    }
+
+  }
+  &.v-middle {
+    tbody > tr > td {
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  position: fixed;
+  bottom:0px;
+  text-align: center;
+  color:#888;
+  font-weight: 500;
+  background: #fff;
+  height: 40 + 5px;
+  line-height: 40px;
+  z-index: 1030; // same as navbar
+  border-top:5px solid $body-bg;
+  display: block;
+}

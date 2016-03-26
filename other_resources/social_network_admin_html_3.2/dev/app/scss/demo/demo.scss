@@ -1,0 +1,26 @@
+.demo-icons-list {
+  color: #222222;
+  [class*='col-'] {
+    margin:5px 0;
+    &:hover {
+      color:#000;
+      i:before {
+        font-size: 30px;
+        position: absolute;
+        top: -4px;
+        margin-left: -18px;
+        color:$primary-color;
+      }
+      span { background:#efefef;}
+    }
+  }
+  i {
+    width:30px;
+    text-align:center;
+    &:before {
+      position: relative;
+      top:0;
+    }
+  }
+
+}

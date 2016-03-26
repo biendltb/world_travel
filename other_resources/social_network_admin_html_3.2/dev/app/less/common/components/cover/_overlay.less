@@ -1,0 +1,146 @@
+.cover.overlay {
+
+	img {
+		width: 100%;
+	}
+
+	.btn-cover {
+		position: absolute;
+		font-size: 16px;
+		padding: 2px 3px;
+		top: 10px;
+		left: 10px;
+		.button-variant(#fff; rgba(0, 0, 0, 0.5); transparent);
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+	}
+
+	max-height: 300px;
+
+	ul {
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		width: 100%;
+		list-style: none;
+		background: rgba(0, 0, 0, 0.24);
+		text-align: center;
+		padding: 0;
+		li {
+			padding: 0;
+			display: inline;
+			a {
+				display: inline-block;
+				&:hover {
+					background: rgba(0, 0, 0, 0.54);
+				}
+				height: 40px;
+				line-height: 40px;
+				padding: 0 8px;
+				color: #fff;
+				font-weight: bold;
+				text-decoration: none;
+				i {
+					margin-right: 3px;
+					font-size: 1.4em;
+					&:before {
+						vertical-align: middle;
+					}
+				}
+			}
+			&.active a {
+				background: rgba(0, 0, 0, 0.54);
+			}
+		}
+	}
+}
+
+// Cover Mobile / Desktop Fixes
+.cover.overlay {
+	@media (min-width: @screen-sm) {
+		overflow: hidden;
+	}
+	@media (max-width: @screen-xs) {
+		margin-bottom: 40px + @grid-gutter-width/2;
+	}
+	ul {
+
+		@media (max-width: @screen-xs) {
+			bottom: -40px;
+			background: @sidebar-background;
+			border-top: none;
+			li a {
+				color: lighten(@sidebar-background, 15%);
+			}
+
+			li.active a, li.active a:hover {
+				color: #fff;
+				background: @primary-color;
+
+			}
+
+			li a:hover {
+				color: #fff;
+				background: darken(@sidebar-background, 9%);
+			}
+		}
+		@media (max-width: @screen-md) {
+			li a {
+				height: 40px;
+				line-height: 40px;
+				li a i {
+					margin: 0;
+				}
+				span {
+					display: none;
+				}
+
+			}
+		}
+		@media (min-width: 1270px) {
+
+			text-align: left;
+			width: 250px;
+			top: 0;
+			right: 0;
+			background: #fff;
+			li {
+				display: block;
+				&.active a {
+					background: @primary-color;
+					color: #fff;
+					i {
+						color: #fff;
+					}
+				}
+				a {
+					width: 100%;
+					height: 60px;
+					font-weight: 400;
+					line-height: 60px;
+					color: #3f3f3f;
+					border-bottom: 1px solid #efefef;
+					i {
+						width: 50px;
+						text-align: center;
+						color: #dfdfdf;
+					}
+					&:hover {
+						color: #fff;
+					}
+				}
+
+			}
+		}
+	}
+//	@media (min-width: 1270px) {
+//		border: 1px solid @panel-default-border;
+//		border-left-width: 0;
+//
+//		#main {
+//			width: 100%;
+//			padding-right: 250px;
+//		}
+//	}
+}

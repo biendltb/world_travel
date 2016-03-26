@@ -5,9 +5,7 @@
  */
 package com.biendltb.core;
 
-import com.biendltb.world_travel.HelloServlet;
-import java.io.File;
-import org.eclipse.jetty.server.Connector;
+import com.biendltb.controller.IndexServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -21,6 +19,9 @@ import org.eclipse.jetty.util.thread.QueuedThreadPool;
  * @version 1.0
  */
 public class MainServer {
+    
+    // Resource path pointing to where the WEBROOT is
+    private static final String WEBROOT_INDEX = "/webroot/";
     
     public static void main(String[] args) throws Exception {
         
@@ -37,7 +38,9 @@ public class MainServer {
         // set up context handler
         ServletContextHandler context_hdl = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context_hdl.setContextPath("/");
+        context_hdl.setResourceBase("./src/main/resources/webroot/");
         server.setHandler(context_hdl);
+        
         
         // set connector
         ServerConnector server_connector = new ServerConnector(server);
@@ -50,7 +53,7 @@ public class MainServer {
         assetsHolder.setInitParameter("resourceBase", "./src/main/resources/assets");
         assetsHolder.setInitParameter("pathInfoOnly", "true");
         
-        context_hdl.addServlet(new ServletHolder(new HelloServlet()), "/*");
+        context_hdl.addServlet(new ServletHolder(new IndexServlet()), "/hello");
         
         server.start();
         server.join();

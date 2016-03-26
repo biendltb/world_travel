@@ -1,0 +1,99 @@
+@media (min-width: $screen-sm) {
+  .navbar-fixed-top {
+    left: $sidebar-width;
+  }
+  .footer {
+    left: $sidebar-width;
+    right:0;
+  }
+  #content .container-fluid {
+      margin-bottom: $grid-gutter-width;
+  }
+}
+// Content Fix
+@media (max-width: $screen-sm) {
+  .navbar .container-fluid {
+    padding-right: 0;
+  }
+  #content {
+    min-width: 320px;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+// First Panel Margin-top
+.container-fluid > .panel, .container-fluid > .media {
+  margin-top: $grid-gutter-width / 2;
+}
+@media (min-width: $screen-sm) {
+  #content {
+    margin-left: $sidebar-width;
+  }
+}
+
+
+// Sidebar Show
+.show-sidebar {
+  .sidebar.left {
+    display: block !important;
+  }
+  .navbar-fixed-top {
+    left: $sidebar-width;
+  }
+  .footer {
+    left: $sidebar-width;
+    right:0;
+    @media (max-width: $screen-sm) {
+      width: 320px;
+    }
+  }
+  #content {
+    margin-left: $sidebar-width;
+  }
+  &.show-chat {
+    .sidebar {
+      display: none !important;
+    }
+    .navbar-fixed-top {
+      left: 0;
+      right: $sidebar-width;
+    }
+    #content {
+      margin-left: 0;
+      margin-right: $sidebar-width;
+    }
+  }
+}
+
+.sidebar.right { display: none; }
+.show-chat {
+  .chat-window-container {
+    right: $sidebar-width;
+  }
+  .sidebar.left{
+    display: none !important;
+  }
+  .sidebar.right{
+    display: block !important;
+  }
+  .navbar-fixed-top {
+    left: 0;
+    right: $sidebar-width;
+  }
+  #content {
+    margin-left: auto;
+    margin-right: $sidebar-width;
+    min-width: 320px;
+  }
+  .footer {
+    left:0;
+    margin-left: auto;
+    margin-right: $sidebar-width;
+  }
+}
+
+.timeline {
+  margin:0 -15px;
+}
+

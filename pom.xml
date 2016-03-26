@@ -31,6 +31,22 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${servlet.version}</version>
         </dependency>
+        
+        <!-- JSTL DEPENDENCY -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+        
+        <!-- JSP API -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>apache-jsp</artifactId>
+            <version>9.3.8.v20160314</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <plugins>
@@ -81,6 +97,7 @@
                     <include>**/*.js</include>
                     <include>**/*.properties</include>
                     <include>**/*.html</include>
+                    <include>**/*.jsp</include>
                 </includes>
             </resource>
         </resources>
