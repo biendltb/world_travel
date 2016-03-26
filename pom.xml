@@ -24,6 +24,16 @@
             <artifactId>jetty-servlet</artifactId>
             <version>${jetty.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-webapp</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-annotations</artifactId>
+            <version>${jetty.version}</version>
+        </dependency>
         
         <!-- SERVLET DEPENDENCY -->
         <dependency>
@@ -45,8 +55,12 @@
             <artifactId>apache-jsp</artifactId>
             <version>9.3.8.v20160314</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-plus</artifactId>
+            <version>9.3.8.v20160314</version>
+            <type>jar</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
