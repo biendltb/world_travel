@@ -32,16 +32,7 @@ public class IndexServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         response.addHeader("Content-Type", "text/html");
-        System.out.println("getServletPath: " + request.getServletPath());
-        System.out.println("getServletContext: " + request.getServletContext().getContextPath());
-        System.out.println("getServerName: " + request.getServerName());
-        System.out.println("getServerPort: " + request.getServerPort());
-        System.out.println("getRequestURI: " + request.getRequestURI());
-        System.out.println("getPathInfo: " + request.getPathInfo());
-        System.out.println("getClassPaht: " + this.getServletContext().getContextPath());
         RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
         dispatcher.forward(request, response);
-//        response.getWriter().println("index.html");
-        System.out.println("I'm here!!!!");
     }
 }

@@ -46,8 +46,8 @@ public class MainServer {
     
     private static final Logger LOG = Logger.getLogger(MainServer.class.getName());
 
-    private int port;
-    private String host;
+    private final int port;
+    private final String host;
     private Server server;
     private URI serverURI;
     
