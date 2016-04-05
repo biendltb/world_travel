@@ -33,6 +33,20 @@
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-annotations</artifactId>
             <version>${jetty.version}</version>
+            <type>jar</type>
+        </dependency>
+        
+        <!-- JSP API -->
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>apache-jsp</artifactId>
+            <version>9.3.8.v20160314</version>
+        </dependency>
+        <dependency>
+            <groupId>org.eclipse.jetty</groupId>
+            <artifactId>jetty-plus</artifactId>
+            <version>9.3.8.v20160314</version>
+            <type>jar</type>
         </dependency>
         
         <!-- SERVLET DEPENDENCY -->
@@ -49,18 +63,6 @@
             <version>1.2</version>
         </dependency>
         
-        <!-- JSP API -->
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>apache-jsp</artifactId>
-            <version>9.3.8.v20160314</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-plus</artifactId>
-            <version>9.3.8.v20160314</version>
-            <type>jar</type>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
